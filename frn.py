@@ -8,7 +8,6 @@ class FilterResponseNormalization(nn.Module):
         # eps: A scalar constant or learnable variable.
 
         super(FilterResponseNormalization, self).__init__()
-
         self.beta = beta
         self.gamma = gamma
         self.eps = torch.Tensor([eps])
