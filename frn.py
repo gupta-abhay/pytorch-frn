@@ -18,5 +18,5 @@ class FilterResponseNormalization(nn.Module):
         assert (self.gamma.shape[1], self.beta.shape[1], self.tau.shape[1]) == (c, c, c)
 
         nu2 = torch.mean(x.pow(2), (2,3), keepdims=True)
-        x = torch.div(x, nu2+torch.abs(self.eps))
+        x = x * torch.rsqrt(nu2 + torch.abs(self.eps))
         return torch.max(self.gamma*x + self.beta, self.tau)
