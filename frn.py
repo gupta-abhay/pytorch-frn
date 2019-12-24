@@ -31,7 +31,7 @@ class FilterResponseNormNd(nn.Module):
         self.reset_parameters()
     
     def forward(self, x):
-        avg_dims = tuple(range(2, x.ndim))
+        avg_dims = tuple(range(2, x.dim()))
         nu2 = torch.pow(x, 2).mean(dim=avg_dims, keepdim=True)
         x = x * torch.rsqrt(nu2 + torch.abs(self.eps))
         return torch.max(self.gamma * x + self.beta, self.tau)
