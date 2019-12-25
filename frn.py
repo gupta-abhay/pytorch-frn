@@ -13,8 +13,8 @@ class FilterResponseNormNd(nn.Module):
         """
         Input Variables:
         ----------------
-            ndim: A integer indicating the number of dimensions of the expected input tensor.
-            num_features: A integer indicating the number of input feature dimensions.
+            ndim: An integer indicating the number of dimensions of the expected input tensor.
+            num_features: An integer indicating the number of input feature dimensions.
             eps: A scalar constant or learnable variable.
             learnable_eps: A bool value indicating whether the eps is learnable.
         """
