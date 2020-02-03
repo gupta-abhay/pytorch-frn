@@ -12,6 +12,10 @@ This repository contains a direct usable module for the recently released [Filte
 * [Abhay Gupta](https://github.com/gupta-abhay)
 * [Huang Lianghua](https://github.com/huanglianghua)
 
+## Baselines
+
+* [Implementation by Yuxin Wu](https://github.com/ppwwyyxx/FRN-on-common-ImageNet-baseline) 
+
 ## References
 
 [1] [Filter Response Normalization Layer: Eliminating Batch Dependence in the Training of Deep Neural Networks](https://arxiv.org/abs/1911.09737)
